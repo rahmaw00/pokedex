@@ -1,14 +1,81 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 20vh 20vh 20vh 40vh;
-  grid-template-rows: 25vh 25vh 25vh 25vh;
   /* grid-template-columns: 'nav nav nav' 'main main main' 'footer footer footer'; */
-  grid-template-areas: 'nav nav nav rightcol' 'main main main rightcol' 'main main main rightcol' 'footer footer footer rightcol';
+  grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
+  grid-template-areas: '. nav .' 'aside main .' 'footer footer footer';
+  background: #B0E7FF;
+  background-image: url("https://images7.alphacoders.com/662/662102.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
-/* 39, 84 */
-input[type="checkbox"] {
+button {
+  border-radius: 50%;
+  background-color: cornflowerblue;
+}
+
+@keyframes logoAppear {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+#header {
+  grid-area: nav;
+}
+
+#header img {
+  width: 96.7%;
+  height: auto;
+  padding-top: 25px;
+  animation: logoAppear 5s infinite;
+}
+
+#mid {
+  padding-top: 55px;
+  grid-area: main;
+  display: flex;
+  /* z-index: -1; */
+}
+
+#side {
+  grid-area: aside;
+  grid-template: 30vh 70vh / 100vw;
+  grid-template-areas: 'h1 h1' 'div div';
+}
+
+#bottom {
+  grid-area: footer;
+  background-color: #B0E7FF;
+  text-align: center;
+}
+
+aside h1 {
+  text-transform: uppercase;
+  color: #ffee90;
+  text-align: center;
+}
+
+aside h2 {
+  background-color: blue;
+}
+
+main img{
+  object-fit: scale-down;
+}
+
+main button img {
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* input[type="checkbox"] {
 	display: none;
 }
 .lbl-toggle {
@@ -20,32 +87,30 @@ input[type="checkbox"] {
 	text-align: center;
 	padding: 1rem;
 	cursor: pointer;
-	color: wheat;
-	background: tan;
-	border-radius: 7px;
+	color: blue;
+	background: #ffee90;
+	/* border-radius: 7px;
 	transition: all 0.25s ease-out;
 }
+
 .lbl-toggle:hover {
-	color: #7c5a0b;
+	color: red;
 }
+
 .collapsible-content {
 	max-height: 0px;
 	overflow: hidden;
 	transition: max-height .25s ease;
 }
+
 .collapsible-content .content-inner {
-	 background: blanchedAlmond;
-	 border-bottom: 1px solid burlyWood;
+	 background: #ffee90;
+	 border-bottom: 1px solid lightblue;
    border-bottom-left-radius: 12px;
 	 border-bottom-right-radius: 12px;
 	 padding: .5rem 1rem;
 }
+
 .toggle:checked + .lbl-toggle + .collapsible-content {
 	max-height: 350px;
-}
-.description {
-	padding: 0 18px;
-	display: none;
-	overflow: hidden;
-	background-color: #f1f1f1;
-}
+} */

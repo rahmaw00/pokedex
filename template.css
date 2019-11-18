@@ -1,0 +1,43 @@
+body {
+  grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
+  grid-template-areas:  'header header header' 'main main .' 'footer footer footer';
+  background-color: lavender;
+}
+
+/* .page {
+  background-color: var(--white);
+  width: 50vh;
+  height: 100vh;
+} */
+
+#blaziken {
+  text-transform: uppercase;
+  color: coral;
+  float: right;
+  font-size: 100px;
+}
+
+#mewtwo {
+  padding-right: 10px;
+  text-transform: uppercase;
+  color: thistle;
+  float: right;
+  font-size: 100px;
+}
+
+#pikachu {
+  text-transform: uppercase;
+  color: lightyellow;
+  float: right;
+  font-size: 100px;
+}
+
+header img {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+main div h1 {
+  text-transform: uppercase;
+  color: mediumPurple;
+}
