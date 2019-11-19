@@ -4,16 +4,35 @@ body {
   /* grid-template-columns: 'nav nav nav' 'main main main' 'footer footer footer'; */
   grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
   grid-template-areas: '. nav .' 'aside main .' 'footer footer footer';
-  background: #B0E7FF;
-  background-image: url("https://images7.alphacoders.com/662/662102.png");
-  background-size: contain;
+  background: #adcade;
+  /* background-image: url("https://images7.alphacoders.com/662/662102.png");
+  background-size: cover;
   background-repeat: no-repeat;
-
+  background-attachment: fixed; */
 }
 
-button {
+#blazikenButton {
+  background-color: #FEB753;
+  animation: bounceInUp 3s;
+  box-shadow: 2px 4px orange;
+}
+
+#mewtwoButton {
+  background-color: thistle;
+  animation: bounceInUp2 3s;
+  box-shadow: 2px 4px purple;
+}
+
+#pikachuButton {
+  background-color: #FBF06F;
+  animation: bounceInUp3 3s;
+  box-shadow: 2px 4px burlywood;
+}
+
+#refresh {
   border-radius: 50%;
-  background-color: cornflowerblue;
+  background-color: #39CCCC;
+  border-style: none;
 }
 
 @keyframes logoAppear {
@@ -24,6 +43,46 @@ button {
   }
 }
 
+@keyframes bounceInUp {
+   0% {
+      opacity: 0;
+      transform: translateY(2000px);
+   } 60% {
+      opacity: 1;
+      transform: translateY(0px);
+   } 80% {
+      transform: translateY(20px);
+   } 100% {
+      transform: translateY(0);
+   }
+}
+@keyframes bounceInUp2 {
+   0% {
+      opacity: 0;
+      transform: translateY(1000px);
+   } 60% {
+      opacity: 1;
+      transform: translateY(0px);
+   } 80% {
+      transform: translateY(10px);
+   } 100% {
+      transform: translateY(0);
+   }
+}
+@keyframes bounceInUp3 {
+   0% {
+      opacity: 0;
+      transform: translateY(1500px);
+   } 60% {
+      opacity: 1;
+      transform: translateY(-60px);
+   } 80% {
+      transform: translateY(15px);
+   } 100% {
+      transform: translateY(0);
+   }
+}
+
 #header {
   grid-area: nav;
 }
@@ -32,11 +91,22 @@ button {
   width: 96.7%;
   height: auto;
   padding-top: 25px;
-  animation: logoAppear 5s infinite;
+  animation: logoAppear 10s;
+}
+
+.icons {
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  width: 25vh;
+  height: 25vh;
+  border-style: none;
+  margin-right: 60px;
+  padding-top: 25px;
 }
 
 #mid {
   padding-top: 55px;
+  padding-right: 30px;
   grid-area: main;
   display: flex;
   /* z-index: -1; */
@@ -50,8 +120,9 @@ button {
 
 #bottom {
   grid-area: footer;
-  background-color: #B0E7FF;
+  /* background-color: #B0E7FF; */
   text-align: center;
+  padding-top: 18px;
 }
 
 aside h1 {
@@ -73,6 +144,11 @@ main button img {
   margin: 0;
   width: 100px;
   height: 100px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
 /* input[type="checkbox"] {

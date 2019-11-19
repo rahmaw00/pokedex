@@ -1,7 +1,19 @@
-body {
+#mewtwoBody {
   grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
   grid-template-areas:  'header header header' 'main main .' 'footer footer footer';
   background-color: lavender;
+}
+
+#blazikenBody {
+  grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
+  grid-template-areas:  'header header header' 'main main .' 'footer footer footer';
+  background-color: #fecc9a;
+}
+
+#pikachuBody {
+  grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
+  grid-template-areas:  'header header header' 'main main .' 'footer footer footer';
+  background-color: lightyellow;
 }
 
 /* .page {
@@ -23,13 +35,37 @@ body {
   color: thistle;
   float: right;
   font-size: 100px;
+  animation: slideUp 10s;
+
 }
 
 #pikachu {
   text-transform: uppercase;
-  color: lightyellow;
+  color: #feee9a;
   float: right;
   font-size: 100px;
+}
+
+.pokemon {
+  animation: slide-left 10s;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  } to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-bottom: 100%;
+  } to {
+    margin-bottom: 0%;
+  }
 }
 
 header img {
@@ -37,7 +73,17 @@ header img {
   padding-right: 30px;
 }
 
-main div h1 {
+#mewtwoStats {
   text-transform: uppercase;
   color: mediumPurple;
+}
+
+#blazikenStats {
+  text-transform: uppercase;
+  color: coral;
+}
+
+#pikachuStats {
+  text-transform: uppercase;
+  color: #feee9a;
 }
