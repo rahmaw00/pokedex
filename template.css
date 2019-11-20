@@ -1,7 +1,73 @@
 #mewtwoBody {
   grid-template: 20vh 70vh 10vh / repeat(3, 33.33%);
-  grid-template-areas:  'header header header' 'main main .' 'footer footer footer';
+  grid-template-areas:  'header header header' 'main main section' 'footer footer footer';
   background-color: lavender;
+}
+
+#box {
+  border-radius: 15%;
+  background-color: #E6BCCD;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  right: 10px;
+  top: 5px;
+}
+
+#box2 {
+  border-radius: 40%;
+  background-color: #D295BF;
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 4px;
+  bottom: 5px;
+}
+
+#box3 {
+  border-radius: 15%;
+  background-color: #FFB44C;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  right: 10px;
+  top: 5px;
+}
+
+#box4 {
+  border-radius: 40%;
+  background-color: #FFC971;
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 4px;
+  bottom: 5px;
+}
+
+#box5 {
+  border-radius: 15%;
+  background-color: #FDFF87;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  right: 10px;
+  top: 5px;
+}
+
+#box6 {
+  border-radius: 40%;
+  background-color: #FFF544;
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 4px;
+  bottom: 5px;
 }
 
 #blazikenBody {
@@ -27,6 +93,8 @@
   color: coral;
   float: right;
   font-size: 100px;
+  animation: slideUp 10s;
+  top: 2px;
 }
 
 #mewtwo {
@@ -36,14 +104,16 @@
   float: right;
   font-size: 100px;
   animation: slideUp 10s;
-
+  top: 2px;
 }
 
 #pikachu {
   text-transform: uppercase;
-  color: #feee9a;
+  color: #F7CA2A;
   float: right;
   font-size: 100px;
+  animation: slideUp 10s;
+  top: 2px;
 }
 
 .pokemon {
@@ -76,6 +146,11 @@ header img {
 #mewtwoStats {
   text-transform: uppercase;
   color: mediumPurple;
+  font-family: ‘Pokemon’;
+}
+
+@font-face {
+  src: url(‘./fonts/PokemonHollow.ttf’);
 }
 
 #blazikenStats {
