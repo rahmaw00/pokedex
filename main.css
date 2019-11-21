@@ -13,19 +13,19 @@ body {
 
 #blazikenButton {
   background-color: #FEB753;
-  animation: bounceInUp 3s;
+  animation: bounceUp 3s;
   box-shadow: 2px 4px rgb(255, 180, 113);
 }
 
 #mewtwoButton {
   background-color: thistle;
-  animation: bounceInUp2 3s;
+  animation: bounceUp2 3s;
   box-shadow: 2px 4px rgba(172, 53, 226, 0.54);
 }
 
 #pikachuButton {
   background-color: #FBF06F;
-  animation: bounceInUp3 3s;
+  animation: bounceUp3 3s;
   box-shadow: 2px 4px burlywood;
 }
 
@@ -43,7 +43,7 @@ body {
   }
 }
 
-@keyframes bounceInUp {
+@keyframes bounceUp {
    0% {
       opacity: 0;
       transform: translateY(2000px);
@@ -56,7 +56,7 @@ body {
       transform: translateY(0);
    }
 }
-@keyframes bounceInUp2 {
+@keyframes bounceUp2 {
    0% {
       opacity: 0;
       transform: translateY(1000px);
@@ -69,7 +69,7 @@ body {
       transform: translateY(0);
    }
 }
-@keyframes bounceInUp3 {
+@keyframes bounceUp3 {
    0% {
       opacity: 0;
       transform: translateY(1500px);
