@@ -14,7 +14,7 @@ body {
 #blazikenButton {
   background-color: #FEB753;
   animation: bounceUp 3s;
-  box-shadow: 2px 4px rgb(255, 180, 113);
+  box-shadow: 2px 4px rgb(148, 64, 1);
 }
 
 #mewtwoButton {
@@ -27,6 +27,21 @@ body {
   background-color: #FBF06F;
   animation: bounceUp3 3s;
   box-shadow: 2px 4px burlywood;
+}
+
+#generate {
+  background-color: rgb(245, 170, 220);
+  animation: bounceUp2 3s;
+  box-shadow: 2px 4px rgb(133, 14, 88);
+  width: 25vh;
+  height: 25vh;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+#generate a {
+  text-decoration: none;
+  font-color: purple;
 }
 
 #refresh {
@@ -102,6 +117,9 @@ body {
   border-style: none;
   margin-right: 55px;
   padding-top: 25px;
+  left: 90px;
+  right: 90px;
+  display: flex;
 }
 
 #mid {

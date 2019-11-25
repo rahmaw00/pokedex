@@ -153,7 +153,16 @@ header img {
 #mewtwoStats {
   text-transform: uppercase;
   color: mediumPurple;
-  font-family: ‘Pokemon’;
+}
+
+#blazikenStats {
+  text-transform: uppercase;
+  color: coral;
+}
+
+#pikachuStats {
+  text-transform: uppercase;
+  color: rgb(252, 158, 16);
 }
 
 #mewtwoStats, #mewtwoStatsOpen {
@@ -178,14 +187,4 @@ header img {
 
 @font-face {
   src: url(‘./fonts/PokemonHollow.ttf’);
-}
-
-#blazikenStats {
-  text-transform: uppercase;
-  color: coral;
-}
-
-#pikachuStats {
-  text-transform: uppercase;
-  color: #feee9a;
 }
